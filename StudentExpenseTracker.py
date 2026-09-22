@@ -28,7 +28,7 @@ def add_expense():
             total = sum(expense["amount"] for expense in expenses)
 
             if total > budget:
-                print("⚠️ ALERT! Your budget has been exceeded!")
+                print("ALERT! Your budget has been exceeded!")
                 print(f"Exceeded Amount: ₹{total - budget}")
 
     except ValueError:
@@ -104,7 +104,7 @@ def view_summary():
         print(f"Budget: ₹{budget}")
 
         if total > budget:
-            print("⚠️ ALERT! Your budget has been exceeded!")
+            print("ALERT! Your budget has been exceeded!")
             print(f"Exceeded Amount: ₹{total - budget}")
         else:
             print(f"Remaining Budget: ₹{remaining}")
